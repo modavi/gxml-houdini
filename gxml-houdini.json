@@ -1,0 +1,31 @@
+{
+    "name": "gxml-houdini",
+    "version": "0.1.0",
+    "description": "Houdini integration for the GXML geometric layout library",
+    "env": [
+        {
+            "GXML_CORE_PATH": {
+                "value": "$HOUDINI_PACKAGE_PATH/gxml/src/gxml"
+            }
+        },
+        {
+            "HOUDINI_OTLSCAN_PATH": {
+                "value": "$HOUDINI_PACKAGE_PATH/otls",
+                "method": "append"
+            }
+        },
+        {
+            "PYTHONPATH": {
+                "value": "$HOUDINI_PACKAGE_PATH/src",
+                "method": "append"
+            }
+        },
+        {
+            "PYTHONPATH": {
+                "value": "$GXML_CORE_PATH",
+                "method": "append"
+            }
+        }
+    ],
+    "path": "$HOUDINI_PACKAGE_PATH"
+}
